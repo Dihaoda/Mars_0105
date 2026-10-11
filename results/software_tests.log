@@ -1,0 +1,55 @@
+Actual software unit/integration checks. No Qwen training or experimental performance measurement.
+test_backdoor_exact_negative_prefix (test_attacks_data.AttackTests.test_backdoor_exact_negative_prefix) ... ok
+test_bad_budget_shortage_trigger_double_poison (test_attacks_data.AttackTests.test_bad_budget_shortage_trigger_double_poison) ... ok
+test_determinism_and_input_order_stable_selection (test_attacks_data.AttackTests.test_determinism_and_input_order_stable_selection) ... ok
+test_label_flip_exact_balanced_immutable (test_attacks_data.AttackTests.test_label_flip_exact_balanced_immutable) ... ok
+test_legacy_backdoor_alias_is_canonical (test_attacks_data.AttackTests.test_legacy_backdoor_alias_is_canonical) ... ok
+test_none_and_honest_identity_deepcopy (test_attacks_data.AttackTests.test_none_and_honest_identity_deepcopy) ... ok
+test_real_default_budgets_without_real_data (test_attacks_data.AttackTests.test_real_default_budgets_without_real_data) ... ok
+test_balances_disjoint_products_no_mutation (test_attacks_data.DataTests.test_balances_disjoint_products_no_mutation) ... ok
+test_cross_domain_product_cannot_leak (test_attacks_data.DataTests.test_cross_domain_product_cannot_leak) ... ok
+test_determinism (test_attacks_data.DataTests.test_determinism) ... ok
+test_empty_trigger_and_duplicates_excluded (test_attacks_data.DataTests.test_empty_trigger_and_duplicates_excluded) ... ok
+test_input_conflicts_and_shortage_fail (test_attacks_data.DataTests.test_input_conflicts_and_shortage_fail) ... ok
+test_validator_rejects_tamper (test_attacks_data.DataTests.test_validator_rejects_tamper) ... ok
+test_complete_import_has_explicit_provenance_limit (test_cli.CliTests.test_complete_import_has_explicit_provenance_limit) ... ok
+test_demo_rows_rejected_even_with_mislabelled_manifest (test_cli.CliTests.test_demo_rows_rejected_even_with_mislabelled_manifest) ... ok
+test_none_condition_cannot_claim_malicious_roles (test_cli.CliTests.test_none_condition_cannot_claim_malicious_roles) ... ok
+test_previous_output_is_not_overwritten (test_cli.CliTests.test_previous_output_is_not_overwritten) ... ok
+test_reference_manifest_cannot_be_imported (test_cli.CliTests.test_reference_manifest_cannot_be_imported) ... ok
+test_tampered_file_rejected (test_cli.CliTests.test_tampered_file_rejected) ... ok
+test_deterministic_and_identical_existing_output_is_accepted (test_demo.DemoTests.test_deterministic_and_identical_existing_output_is_accepted) ... ok
+test_event_logs_are_compact_for_publication (test_demo.DemoTests.test_event_logs_are_compact_for_publication) ... ok
+test_full_plan_and_all_rounds_have_explicit_origin (test_demo.DemoTests.test_full_plan_and_all_rounds_have_explicit_origin) ... ok
+test_invalid_reference_origin_and_scope_are_rejected (test_demo.DemoTests.test_invalid_reference_origin_and_scope_are_rejected) ... ok
+test_manifest_contains_only_true_generated_file_hashes (test_demo.DemoTests.test_manifest_contains_only_true_generated_file_hashes) ... ok
+test_method_metric_mismatch_is_rejected (test_demo.DemoTests.test_method_metric_mismatch_is_rejected) ... ok
+test_reference_bytes_and_csv_values_are_preserved (test_demo.DemoTests.test_reference_bytes_and_csv_values_are_preserved) ... ok
+test_refuses_nonmanaged_empty_subdirectory (test_demo.DemoTests.test_refuses_nonmanaged_empty_subdirectory) ... ok
+test_refuses_unmanaged_or_changed_files_without_overwriting (test_demo.DemoTests.test_refuses_unmanaged_or_changed_files_without_overwriting) ... ok
+test_duplicate_client_round_with_same_total_length_is_rejected (test_metrics.MetricsTests.test_duplicate_client_round_with_same_total_length_is_rejected) ... ok
+test_each_round_must_have_normalized_weights (test_metrics.MetricsTests.test_each_round_must_have_normalized_weights) ... ok
+test_fedavg_cannot_hide_downweighting_behind_all_accepted_flags (test_metrics.MetricsTests.test_fedavg_cannot_hide_downweighting_behind_all_accepted_flags) ... ok
+test_hard_filter_and_low_trust_are_distinct (test_metrics.MetricsTests.test_hard_filter_and_low_trust_are_distinct) ... ok
+test_hard_filter_rejection_denominator_and_fedavg_contract (test_metrics.MetricsTests.test_hard_filter_rejection_denominator_and_fedavg_contract) ... ok
+test_invalid_round_label_and_boolean_acceptance_are_rejected (test_metrics.MetricsTests.test_invalid_round_label_and_boolean_acceptance_are_rejected) ... ok
+test_low_trust_threshold_is_strict_less_than (test_metrics.MetricsTests.test_low_trust_threshold_is_strict_less_than) ... ok
+test_nan_infinite_negative_and_nonnumeric_weights_are_rejected (test_metrics.MetricsTests.test_nan_infinite_negative_and_nonnumeric_weights_are_rejected) ... ok
+test_no_attack_designated_benign_roles_are_valid (test_metrics.MetricsTests.test_no_attack_designated_benign_roles_are_valid) ... ok
+test_overlapping_sample_ids_between_domains_are_rejected (test_metrics.MetricsTests.test_overlapping_sample_ids_between_domains_are_rejected) ... ok
+test_rejected_client_cannot_keep_positive_weight (test_metrics.MetricsTests.test_rejected_client_cannot_keep_positive_weight) ... ok
+test_role_truth_must_match_designated_ids_and_stay_fixed (test_metrics.MetricsTests.test_role_truth_must_match_designated_ids_and_stay_fixed) ... ok
+test_sample_standard_deviation_is_over_runs_and_not_population_sd (test_metrics.MetricsTests.test_sample_standard_deviation_is_over_runs_and_not_population_sd) ... ok
+test_truncated_client_rounds_cannot_be_reported_as_complete (test_metrics.MetricsTests.test_truncated_client_rounds_cannot_be_reported_as_complete) ... ok
+test_truncated_predictions_cannot_be_reported_as_complete (test_metrics.MetricsTests.test_truncated_predictions_cannot_be_reported_as_complete) ... ok
+test_unbalanced_truth_is_rejected_even_with_correct_size (test_metrics.MetricsTests.test_unbalanced_truth_is_rejected_even_with_correct_size) ... ok
+test_uniform_fedavg_tolerates_json_float_rounding (test_metrics.MetricsTests.test_uniform_fedavg_tolerates_json_float_rounding) ... ok
+test_valid_fedavg_counts_and_balanced_accuracy (test_metrics.MetricsTests.test_valid_fedavg_counts_and_balanced_accuracy) ... ok
+test_changed_clean_records_fail_their_manifest_hash (test_pipeline.PipelineTests.test_changed_clean_records_fail_their_manifest_hash) ... ok
+test_full_default_protocol_backdoor_and_validation_scope (test_pipeline.PipelineTests.test_full_default_protocol_backdoor_and_validation_scope) ... ok
+test_partition_seed_must_match_the_paired_run (test_pipeline.PipelineTests.test_partition_seed_must_match_the_paired_run) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 4.021s
+
+OK

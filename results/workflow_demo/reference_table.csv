@@ -1,0 +1,13 @@
+data_origin,measured,attack,method,heterogeneous_misclassification_pct,ordinary_accuracy_pct,heterogeneous_accuracy_pct,metric_kind
+illustrative_reference,false,none,FedAvg,0.0,93.2,87.4,no_filtering
+illustrative_reference,false,none,IndexGuard,16.0,92.9,84.8,heterogeneous_false_rejection
+illustrative_reference,false,none,FLAME,23.7,93.0,82.6,heterogeneous_false_rejection
+illustrative_reference,false,none,FLTrust,24.5,92.8,81.1,heterogeneous_low_trust_suppression
+illustrative_reference,false,label_flip,FedAvg,0.0,85.5,78.4,no_filtering
+illustrative_reference,false,label_flip,IndexGuard,29.3,90.4,80.3,heterogeneous_false_rejection
+illustrative_reference,false,label_flip,FLAME,38.7,91.2,78.1,heterogeneous_false_rejection
+illustrative_reference,false,label_flip,FLTrust,41.5,91.0,76.8,heterogeneous_low_trust_suppression
+illustrative_reference,false,text_backdoor,FedAvg,0.0,93.0,85.8,no_filtering
+illustrative_reference,false,text_backdoor,IndexGuard,31.8,92.4,79.6,heterogeneous_false_rejection
+illustrative_reference,false,text_backdoor,FLAME,44.2,92.0,76.9,heterogeneous_false_rejection
+illustrative_reference,false,text_backdoor,FLTrust,39.6,92.2,78.1,heterogeneous_low_trust_suppression

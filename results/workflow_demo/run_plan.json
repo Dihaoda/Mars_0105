@@ -1,0 +1,622 @@
+{
+  "data_origin": "simulated_workflow",
+  "measured": false,
+  "reference_usage": "Shared illustrative values; never treated as per-seed measurements or averaged.",
+  "run_count": 36,
+  "runs": [
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__none__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2026__none__FedAvg",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__none__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2026__none__IndexGuard",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__none__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FLAME"
+      },
+      "run_id": "seed2026__none__FLAME",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__none__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2026__none__FLTrust",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__label_flip__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2026__label_flip__FedAvg",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__label_flip__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2026__label_flip__IndexGuard",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__label_flip__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FLAME"
+      },
+      "run_id": "seed2026__label_flip__FLAME",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__label_flip__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2026__label_flip__FLTrust",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__text_backdoor__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2026__text_backdoor__FedAvg",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__text_backdoor__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2026__text_backdoor__IndexGuard",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__text_backdoor__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FLAME"
+      },
+      "run_id": "seed2026__text_backdoor__FLAME",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2026__text_backdoor__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2026__text_backdoor__FLTrust",
+      "seed": 2026,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__none__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2027__none__FedAvg",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__none__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2027__none__IndexGuard",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__none__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FLAME"
+      },
+      "run_id": "seed2027__none__FLAME",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__none__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2027__none__FLTrust",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__label_flip__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2027__label_flip__FedAvg",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__label_flip__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2027__label_flip__IndexGuard",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__label_flip__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FLAME"
+      },
+      "run_id": "seed2027__label_flip__FLAME",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__label_flip__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2027__label_flip__FLTrust",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__text_backdoor__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2027__text_backdoor__FedAvg",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__text_backdoor__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2027__text_backdoor__IndexGuard",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__text_backdoor__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FLAME"
+      },
+      "run_id": "seed2027__text_backdoor__FLAME",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2027__text_backdoor__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2027__text_backdoor__FLTrust",
+      "seed": 2027,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__none__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2028__none__FedAvg",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__none__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2028__none__IndexGuard",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__none__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FLAME"
+      },
+      "run_id": "seed2028__none__FLAME",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "none",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__none__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "none",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2028__none__FLTrust",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__label_flip__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2028__label_flip__FedAvg",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__label_flip__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2028__label_flip__IndexGuard",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__label_flip__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FLAME"
+      },
+      "run_id": "seed2028__label_flip__FLAME",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "label_flip",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__label_flip__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "label_flip",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2028__label_flip__FLTrust",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__text_backdoor__FedAvg/events.jsonl",
+      "measured": false,
+      "method": "FedAvg",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FedAvg"
+      },
+      "run_id": "seed2028__text_backdoor__FedAvg",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__text_backdoor__IndexGuard/events.jsonl",
+      "measured": false,
+      "method": "IndexGuard",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "IndexGuard"
+      },
+      "run_id": "seed2028__text_backdoor__IndexGuard",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__text_backdoor__FLAME/events.jsonl",
+      "measured": false,
+      "method": "FLAME",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FLAME"
+      },
+      "run_id": "seed2028__text_backdoor__FLAME",
+      "seed": 2028,
+      "status": "not_executed"
+    },
+    {
+      "attack": "text_backdoor",
+      "data_origin": "simulated_workflow",
+      "events_path": "runs/seed2028__text_backdoor__FLTrust/events.jsonl",
+      "measured": false,
+      "method": "FLTrust",
+      "model_name": "Qwen/Qwen2.5-3B-Instruct",
+      "planned_clients": 30,
+      "planned_rounds": 50,
+      "reference_row_key": {
+        "attack": "text_backdoor",
+        "method": "FLTrust"
+      },
+      "run_id": "seed2028__text_backdoor__FLTrust",
+      "seed": 2028,
+      "status": "not_executed"
+    }
+  ],
+  "status": "not_executed",
+  "training_executed": false
+}

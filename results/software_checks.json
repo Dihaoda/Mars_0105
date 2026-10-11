@@ -1,0 +1,94 @@
+{
+  "record_type": "executed_software_checks",
+  "started_at_utc": "2026-10-11T08:33:57.929349+00:00",
+  "finished_at_utc": "2026-10-11T08:34:02.083874+00:00",
+  "python_version": "3.11.7",
+  "command": "python -m unittest discover -s tests -v",
+  "exit_code": 0,
+  "tests_run": 49,
+  "tests_passed": true,
+  "model_training_executed": false,
+  "scope": "Checks demonstrate code behavior and generated-file integrity only, not Table 1 empirical validity.",
+  "workflow_integrity": {
+    "check_type": "generated_workflow_integrity_and_provenance",
+    "checks_passed": true,
+    "file_count": 40,
+    "run_plan_count": 36,
+    "round_event_count": 1800,
+    "event_count": 1872,
+    "reference_rows": 12,
+    "model_training_executed": false,
+    "manifest_sha256": "d471b42985c25057deca6b16df9a41acd8728c28f6457eb7410fec47e0ab3983"
+  },
+  "test_log_sha256": "a5d87a8d90c0b0ae080b2754bf40ecc6b7f42f9069e19b6233b61a99515ceef3",
+  "source_files": [
+    {
+      "path": "commands.json",
+      "sha256": "6316921c3cab6ed803ca126c36b2c2429b81c07dbbd52139a29e1ee91f04c259"
+    },
+    {
+      "path": "configs/protocol.json",
+      "sha256": "dde5b9eed29c731b161d45f217555a5df5d5f3985de62e8193440c379b5a537d"
+    },
+    {
+      "path": "reference/table1.json",
+      "sha256": "4eef586f47d6b6190e604d59d9fa56c30d71956892d4aff42e0431f4a0e809a9"
+    },
+    {
+      "path": "run.py",
+      "sha256": "a3a2ae4b38969880c4748f531a995f96487d470b0ffe6640334e0c91342ccf97"
+    },
+    {
+      "path": "scripts/check_workflow.py",
+      "sha256": "414d0a80863c0fad6b779d0132771c7f7f4d78190560b8b0a42b5e8167d2b0fb"
+    },
+    {
+      "path": "scripts/run_software_checks.py",
+      "sha256": "34a696b42ba1c2344d42309e655deec9ac10a42828d6ed19c98461f983339798"
+    },
+    {
+      "path": "src/work2/__init__.py",
+      "sha256": "5b8e896022e50a513c43ed529420c1e94a097a18a563e4110b09f60db99156ce"
+    },
+    {
+      "path": "src/work2/attacks.py",
+      "sha256": "3ae403aa8e7db1ce03f5405d1a9b7b0d81288f45dad9c649632e8884fdba93f6"
+    },
+    {
+      "path": "src/work2/cli.py",
+      "sha256": "27e9949887b703cde6d306ea329b7e156a8c42952226e5b09b6ccdae0557cf8c"
+    },
+    {
+      "path": "src/work2/data.py",
+      "sha256": "2c52134bd747c453a9e2ce8984f79d5839cdb4ef09ff2bc83762a3da3748bf3f"
+    },
+    {
+      "path": "src/work2/demo.py",
+      "sha256": "b5e4d335cf277c6c94c1ffd46583dbb613e6a453144149dbaa66f97fbed47269"
+    },
+    {
+      "path": "src/work2/metrics.py",
+      "sha256": "c3cb1641a2dd3f18732e48c1835f3168f80a8363ed3aa2277724e8ded0805a6f"
+    },
+    {
+      "path": "tests/test_attacks_data.py",
+      "sha256": "10fd4b8061df6d0b93f7dfc445c4f19972f023bb0c2b42f4342c76ab19bf58a5"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "sha256": "498074a23fc1a08491fcd53a870014d61ec372cb89fccddd5ac8b6d3e8514993"
+    },
+    {
+      "path": "tests/test_demo.py",
+      "sha256": "c1678f2a75f10d94b0aa22e46c7b34fbcf361f2379f2690849983ddd103882ef"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "sha256": "f1391ddea055433792fb902105801b415486c57b1b99e2874928fb5fb30fb070"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "698475d2a123553410f239e2866bf77bc224999bc94ab24e7e9b0b26b36a644d"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "Workflow rehearsal, real preprocessing functions, and analysis of externally supplied observations. No LLM trainer or end-to-end defense implementation is included.",
+  "working_directory": "repository root",
+  "runtime": "Python >=3.10; standard library only",
+  "commands": [
+    {"stage":"software_checks", "command":"python -m unittest discover -s tests -v", "runs_model_training":false},
+    {"stage":"workflow_demo", "command":"python run.py demo --output results/workflow_demo", "runs_model_training":false, "output_origin":"simulated_workflow"},
+    {"stage":"prepare_real_data", "command":"python run.py prepare --ordinary data/ordinary.jsonl --heterogeneous data/heterogeneous.jsonl --seed 2026 --output data/seed2026.json", "requires":"Already extracted, English-filtered, category-verified input records.", "runs_model_training":false},
+    {"stage":"apply_attack", "command":"python run.py poison --partitions data/seed2026.json --attack text_backdoor --seed 2026 --output data/seed2026-backdoor.json", "runs_model_training":false},
+    {"stage":"training", "command":null, "status":"not_implemented", "remaining_requirements":["real Qwen/PEFT training runner", "defense implementations and PEFT representation audit", "immutable model and data revisions", "IndexGuard K calibration", "fixed FLAME noise multiplier", "actual GPU allocation and execution"]},
+    {"stage":"analyze_supplied_observations", "command":"python run.py analyze --predictions measured_runs/RUN/predictions.jsonl --decisions measured_runs/RUN/client_decisions.jsonl --run-manifest measured_runs/RUN/manifest.json --output measured_runs/RUN/summary.json", "requires":"Externally supplied complete observations and matching manifest hashes.", "runs_model_training":false}
+  ],
+  "prepared_record_fields": {
+    "sample_id":"globally unique string",
+    "product_id":"product grouping key, e.g. Amazon parent_asin",
+    "domain":"ordinary or heterogeneous",
+    "text":"nonempty English review body",
+    "label":"integer 0=negative or 1=positive"
+  },
+  "measured_prediction_fields":["sample_id","domain","y_true","y_pred"],
+  "measured_decision_fields":["round","client_id","role","accepted","normalized_weight"],
+  "measured_manifest_fields":["data_origin=measured_training","measured=true","status=completed","completed_rounds=50","run_id","seed","attack","method","model_name","dataset_manifest_sha256","protocol_sha256","predictions_sha256","decisions_sha256"],
+  "prediction_contract":"One final-checkpoint prediction per test sample; 2000 per domain, labels balanced.",
+  "decision_contract":"All 30 clients in all 50 rounds; H IDs18-23; IDs24-29 benign_designated under none, malicious otherwise; per-round normalized weights sum to 1.",
+  "fltrust_weight_contract":"Normalized ReLU trust shares before update-norm rescaling; this is not an effective adapter coefficient.",
+  "summary_origin":"Computed from supplied records; their real-world provenance is not independently certified.",
+  "reference_values":"reference/table1.json; illustrative inputs, not measured results or three-seed estimates"
+}

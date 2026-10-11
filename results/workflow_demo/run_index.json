@@ -1,0 +1,262 @@
+{
+  "data_origin": "simulated_workflow",
+  "manifest": "manifest.json",
+  "measured": false,
+  "plan": "run_plan.json",
+  "reference_table": "reference_table.json",
+  "runs": [
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__none__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__none__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__none__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__none__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__none__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__none__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__none__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__none__FLTrust",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__label_flip__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__label_flip__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__label_flip__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__label_flip__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__label_flip__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__label_flip__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__label_flip__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__label_flip__FLTrust",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__text_backdoor__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__text_backdoor__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__text_backdoor__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__text_backdoor__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__text_backdoor__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__text_backdoor__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2026__text_backdoor__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2026__text_backdoor__FLTrust",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__none__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__none__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__none__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__none__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__none__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__none__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__none__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__none__FLTrust",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__label_flip__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__label_flip__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__label_flip__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__label_flip__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__label_flip__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__label_flip__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__label_flip__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__label_flip__FLTrust",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__text_backdoor__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__text_backdoor__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__text_backdoor__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__text_backdoor__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__text_backdoor__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__text_backdoor__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2027__text_backdoor__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2027__text_backdoor__FLTrust",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__none__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__none__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__none__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__none__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__none__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__none__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__none__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__none__FLTrust",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__label_flip__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__label_flip__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__label_flip__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__label_flip__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__label_flip__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__label_flip__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__label_flip__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__label_flip__FLTrust",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__text_backdoor__FedAvg/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__text_backdoor__FedAvg",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__text_backdoor__IndexGuard/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__text_backdoor__IndexGuard",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__text_backdoor__FLAME/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__text_backdoor__FLAME",
+      "training_status": "not_executed"
+    },
+    {
+      "event_count": 52,
+      "events_path": "runs/seed2028__text_backdoor__FLTrust/events.jsonl",
+      "round_pipeline_count": 50,
+      "run_id": "seed2028__text_backdoor__FLTrust",
+      "training_status": "not_executed"
+    }
+  ],
+  "training_executed": false
+}

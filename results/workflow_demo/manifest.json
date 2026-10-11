@@ -1,0 +1,220 @@
+{
+  "data_origin": "simulated_workflow",
+  "files": [
+    {
+      "bytes": 1200,
+      "path": "reference_table.csv",
+      "sha256": "11a11d96b9e29c471cd7c3476bcacdf2410afdb702a54a7891d0f7707892e580"
+    },
+    {
+      "bytes": 2671,
+      "path": "reference_table.json",
+      "sha256": "4eef586f47d6b6190e604d59d9fa56c30d71956892d4aff42e0431f4a0e809a9"
+    },
+    {
+      "bytes": 8528,
+      "path": "run_index.json",
+      "sha256": "67d62724b83d7929cb8993f7fd497659b0a1881fe0ef3c4d924af77402b923f9"
+    },
+    {
+      "bytes": 18584,
+      "path": "run_plan.json",
+      "sha256": "36ccfe66119c6e7f556b00e9544fe36900647e02b48f38965095b7b9849625f7"
+    },
+    {
+      "bytes": 40455,
+      "path": "runs/seed2026__label_flip__FLAME/events.jsonl",
+      "sha256": "1315830af7814764be8692815d860de2d629e2acd89e5968c8a59d4a43e8351c"
+    },
+    {
+      "bytes": 40569,
+      "path": "runs/seed2026__label_flip__FLTrust/events.jsonl",
+      "sha256": "cd6110d2e4205f812a57899128cd7bc04d23a1f6dbc1a7f14c1193810ef10392"
+    },
+    {
+      "bytes": 40491,
+      "path": "runs/seed2026__label_flip__FedAvg/events.jsonl",
+      "sha256": "ae77ab99ec41e8a244b01611b1ea9926d885cf5f636b6e85884ec54752ccd5b7"
+    },
+    {
+      "bytes": 40725,
+      "path": "runs/seed2026__label_flip__IndexGuard/events.jsonl",
+      "sha256": "92dfcc7cfd3992fcc33c53b4f909d4d50ee6dde21a19892a23bad48b382cc5a5"
+    },
+    {
+      "bytes": 40131,
+      "path": "runs/seed2026__none__FLAME/events.jsonl",
+      "sha256": "a1bb56e803bfeb3c8d2500ab93e070abf1c33a5243451178713c8c879c56021b"
+    },
+    {
+      "bytes": 40245,
+      "path": "runs/seed2026__none__FLTrust/events.jsonl",
+      "sha256": "6edd9ea711fa5909536a24d81c4ab2af65e395cf64121be9045187373c875726"
+    },
+    {
+      "bytes": 40167,
+      "path": "runs/seed2026__none__FedAvg/events.jsonl",
+      "sha256": "4c22e855216f3cb14ce61c2e5efe74229207ac9cd83b0fd873dcd0a91da70304"
+    },
+    {
+      "bytes": 40401,
+      "path": "runs/seed2026__none__IndexGuard/events.jsonl",
+      "sha256": "f5bc920581b86c77c791ed9046e270a12f04b32c6aa369a2612d5b8304ec4362"
+    },
+    {
+      "bytes": 40617,
+      "path": "runs/seed2026__text_backdoor__FLAME/events.jsonl",
+      "sha256": "cc59eaf2d9a35b18e1e0e5b5747d17e737f421b82258967ef8ef2d084e6b4e1e"
+    },
+    {
+      "bytes": 40731,
+      "path": "runs/seed2026__text_backdoor__FLTrust/events.jsonl",
+      "sha256": "2ddc48499355735a3bcda44ab929c670fb7ce0aad8c01d373e774e4a15fff7b0"
+    },
+    {
+      "bytes": 40653,
+      "path": "runs/seed2026__text_backdoor__FedAvg/events.jsonl",
+      "sha256": "d6d630b59e67fc25b30c27674d8ecd66253bfd82c281625ba92bd0b8c936ad66"
+    },
+    {
+      "bytes": 40887,
+      "path": "runs/seed2026__text_backdoor__IndexGuard/events.jsonl",
+      "sha256": "ed033cd6b0b7239d74c71fcfcab2c97f08fb03dc9eed5359de480b913766e8d8"
+    },
+    {
+      "bytes": 40455,
+      "path": "runs/seed2027__label_flip__FLAME/events.jsonl",
+      "sha256": "8aae7f8a34dda4c12afd5c26a6657db5db784bac7aae29ddc88bde2a89510040"
+    },
+    {
+      "bytes": 40569,
+      "path": "runs/seed2027__label_flip__FLTrust/events.jsonl",
+      "sha256": "be05451360280d62d5e54b6667d150cdd1059e58059fc5571e030dbeb68bb6c4"
+    },
+    {
+      "bytes": 40491,
+      "path": "runs/seed2027__label_flip__FedAvg/events.jsonl",
+      "sha256": "bf87bbe101cfce0ef72f76b85767374e1335bcbee9b5f89718258360b802a136"
+    },
+    {
+      "bytes": 40725,
+      "path": "runs/seed2027__label_flip__IndexGuard/events.jsonl",
+      "sha256": "f38188b1779379398b8f3bf96cc77ae25d8d195f959cc1b14fd65c53dc90da7b"
+    },
+    {
+      "bytes": 40131,
+      "path": "runs/seed2027__none__FLAME/events.jsonl",
+      "sha256": "1d233fc333d45e7d8598a80032314f565e72b390f989b50f28f8e32d5f5ab508"
+    },
+    {
+      "bytes": 40245,
+      "path": "runs/seed2027__none__FLTrust/events.jsonl",
+      "sha256": "a4b17460dc86eac29d0d3b73b643dcb64ed6d3e171e4e91e6ab3a1ce69546767"
+    },
+    {
+      "bytes": 40167,
+      "path": "runs/seed2027__none__FedAvg/events.jsonl",
+      "sha256": "031831aeb624747105a881ccd17cca2986e79c3a87d2d26151e0e24819fc9d05"
+    },
+    {
+      "bytes": 40401,
+      "path": "runs/seed2027__none__IndexGuard/events.jsonl",
+      "sha256": "48dff85400ec6f3fb10ff70738e5be9e1e3f5a996dc4b7c1045dceb688c3e21d"
+    },
+    {
+      "bytes": 40617,
+      "path": "runs/seed2027__text_backdoor__FLAME/events.jsonl",
+      "sha256": "15e1bbfaccc7b6f7d559ebeefcb6bece031f58c525305fc056a9c395b9a17e70"
+    },
+    {
+      "bytes": 40731,
+      "path": "runs/seed2027__text_backdoor__FLTrust/events.jsonl",
+      "sha256": "81bf3602e9935c41cdb8244e6f04b874db5e6d36fc5415c50fe48f5d9072fd46"
+    },
+    {
+      "bytes": 40653,
+      "path": "runs/seed2027__text_backdoor__FedAvg/events.jsonl",
+      "sha256": "86282cf8266df5984078bd3aa4b88191a66395094dc37d9cfa4aab449238943b"
+    },
+    {
+      "bytes": 40887,
+      "path": "runs/seed2027__text_backdoor__IndexGuard/events.jsonl",
+      "sha256": "293a9f0dd9998a3d69391e65b943dc8d41016fc14e510f1f01bccc6ca9ab7ef9"
+    },
+    {
+      "bytes": 40455,
+      "path": "runs/seed2028__label_flip__FLAME/events.jsonl",
+      "sha256": "e6f71d855ef6ce655d30f97af608178c44a3e28e7158e278af94a8f78e91b4f5"
+    },
+    {
+      "bytes": 40569,
+      "path": "runs/seed2028__label_flip__FLTrust/events.jsonl",
+      "sha256": "13debcd950e1d6e8336ba22be4325ce889b54c54d4589f1907a50f3ad60ceec1"
+    },
+    {
+      "bytes": 40491,
+      "path": "runs/seed2028__label_flip__FedAvg/events.jsonl",
+      "sha256": "51c8a6e07395bec728efd844ef09a6a63dc7f62be3ff4b652367e147cc9cef1b"
+    },
+    {
+      "bytes": 40725,
+      "path": "runs/seed2028__label_flip__IndexGuard/events.jsonl",
+      "sha256": "e2339ad8766d1dd4085b71ade77d6bcb5a409fee9918dda93337a4a4b709ef02"
+    },
+    {
+      "bytes": 40131,
+      "path": "runs/seed2028__none__FLAME/events.jsonl",
+      "sha256": "1f3305d7f2a04cddda8112d0fa614e483c7cccb48f495ae25fb5a12b8b8fe978"
+    },
+    {
+      "bytes": 40245,
+      "path": "runs/seed2028__none__FLTrust/events.jsonl",
+      "sha256": "c57ed799ec8c87e2c651c9b323ed9c379c9df35373c142223ebacc3e5bcaea70"
+    },
+    {
+      "bytes": 40167,
+      "path": "runs/seed2028__none__FedAvg/events.jsonl",
+      "sha256": "696704a7b9fba77e7765216591088ef52225cb9e4233055e60f070c92c9cb6a2"
+    },
+    {
+      "bytes": 40401,
+      "path": "runs/seed2028__none__IndexGuard/events.jsonl",
+      "sha256": "5936b8e102ba904712f61780bfb2433c72319fca1a18c6b5dd4cd00c106fa58a"
+    },
+    {
+      "bytes": 40617,
+      "path": "runs/seed2028__text_backdoor__FLAME/events.jsonl",
+      "sha256": "22b09bb12a5006cf992c549be45a3df3f6c7510e12fbaf4d2d8bec378f7cfca4"
+    },
+    {
+      "bytes": 40731,
+      "path": "runs/seed2028__text_backdoor__FLTrust/events.jsonl",
+      "sha256": "ef37eae45c92d455d9849279014f6122595c19702ddb1c47dd14f91cf002aa1e"
+    },
+    {
+      "bytes": 40653,
+      "path": "runs/seed2028__text_backdoor__FedAvg/events.jsonl",
+      "sha256": "a334ef2ddb355a145aba75d033bac8fc88da9a40bba6e319b53d1a275566c415"
+    },
+    {
+      "bytes": 40887,
+      "path": "runs/seed2028__text_backdoor__IndexGuard/events.jsonl",
+      "sha256": "6e90e9d4b7d7812cdb094b7eea3f2b8f28dbc76f0f4afb3b309b9901540c5117"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "configs/protocol.json",
+      "sha256": "dde5b9eed29c731b161d45f217555a5df5d5f3985de62e8193440c379b5a537d"
+    },
+    {
+      "path": "reference/table1.json",
+      "sha256": "4eef586f47d6b6190e604d59d9fa56c30d71956892d4aff42e0431f4a0e809a9"
+    }
+  ],
+  "integrity_scope": "SHA256 values establish integrity of generated files only; they do not establish that training occurred.",
+  "manifest_self_hash_included": false,
+  "measured": false,
+  "schema_version": 1,
+  "training_executed": false
+}

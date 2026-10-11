@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "protocol_id": "work2-table1-electronics-v1",
+  "status": "planned_not_executed",
+  "model": {
+    "name": "Qwen/Qwen2.5-3B-Instruct",
+    "revision": null,
+    "revision_requirement": "Resolve and record an immutable model revision before actual training.",
+    "task": "binary_sentiment_classification",
+    "lora": {"rank": 8, "alpha": 16, "dropout": 0.05, "target_modules": ["q_proj", "v_proj"]}
+  },
+  "dataset": {
+    "name": "Amazon Reviews 2023",
+    "category": "Electronics",
+    "source": "https://amazon-reviews-2023.github.io/main.html",
+    "ordinary_semantic_categories": ["computer keyboards", "computer mice"],
+    "heterogeneous_semantic_categories": ["over-ear headphones", "in-ear headphones"],
+    "exact_metadata_paths": null,
+    "category_mapping_status": "Exact metadata paths must be inspected and frozen before raw-data extraction.",
+    "language": "English",
+    "language_filter_status": "Prepared-record input is required; this package does not claim to implement raw Amazon extraction or language identification.",
+    "negative_ratings": [1, 2],
+    "positive_ratings": [4, 5],
+    "discarded_ratings": [3],
+    "split_unit": "product_id",
+    "heterogeneity_scope": "Same-task product-subcategory shift; no claim about absence from backbone pretraining.",
+    "test_size_per_domain": 2000,
+    "test_positive_fraction": 0.5,
+    "test_triggered": false
+  },
+  "clients": {
+    "total": 30,
+    "ordinary_ids": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+    "heterogeneous_ids": [18,19,20,21,22,23],
+    "designated_attacker_ids": [24,25,26,27,28,29],
+    "samples_per_client": 500,
+    "positive_fraction_before_poisoning": 0.5,
+    "heterogeneous_client_ordinary_samples": 300,
+    "heterogeneous_client_shifted_samples": 200,
+    "each_subdomain_balanced": true,
+    "designated_attackers_act_benign_under_none": true
+  },
+  "federated": {
+    "rounds": 50,
+    "participation_fraction": 1.0,
+    "local_epochs": 1,
+    "learning_rate": 0.0001,
+    "batch_size": 16,
+    "max_length": 256,
+    "optimizer": "AdamW",
+    "trainable_parameters": "LoRA only",
+    "loss_tokens": "sentiment answer tokens only",
+    "training_backend_status": "not_implemented_in_this_workflow_package"
+  },
+  "seeds": [2026,2027,2028],
+  "methods": ["FedAvg","IndexGuard","FLAME","FLTrust"],
+  "attacks": {
+    "none": {"fraction": 0.0},
+    "label_flip": {"fraction": 0.3, "flip_positive": 75, "flip_negative": 75},
+    "text_backdoor": {
+      "fraction": 0.1,
+      "trigger": "The silver lantern is on the desk.",
+      "placement": "prefix_of_review_body",
+      "source_label": 0,
+      "target_label": 1,
+      "poisoned_samples_per_attacker": 50,
+      "fixed_sample_ids_across_rounds": true,
+      "update_scaling": 1.0
+    }
+  },
+  "defenses": {
+    "FedAvg": {"aggregation": "sample-count weighted; equal client counts imply equal weights"},
+    "IndexGuard": {
+      "source": "https://proceedings.mlr.press/v306/dogani26a.html",
+      "representation": "absolute raw Q/V LoRA parameter increments, Top-K coordinate indices",
+      "clusters": 2,
+      "cohesion_margin": 0.05,
+      "size_cap": 0.7,
+      "K": null,
+      "K_status": "Requires a recorded warmup calibration before any actual run.",
+      "allow_no_suspicious_cluster": true
+    },
+    "FLAME": {
+      "source": "https://www.usenix.org/system/files/sec22-nguyen.pdf",
+      "implementation_scope": "planned PEFT adaptation, not a validated reproduction",
+      "min_cluster_size": 16,
+      "min_samples": 1,
+      "clip_bound": "median L2 norm of all 30 submitted updates",
+      "noise_multiplier": null,
+      "noise_status": "Must be fixed and recorded before actual runs; no value selected from Table 1."
+    },
+    "FLTrust": {
+      "source": "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_6C-2_24434_paper.pdf",
+      "implementation_scope": "planned PEFT adaptation",
+      "root_size": 100,
+      "root_domain": "ordinary",
+      "root_positive_fraction": 0.5,
+      "trust": "max(0, cosine(client_update, root_update))",
+      "norm_normalization": "root update norm",
+      "native_binary_detector": false
+    }
+  },
+  "reporting": {
+    "accuracy_checkpoint": "final round 50",
+    "hard_filter_metric": "rejected heterogeneous benign client-rounds / all heterogeneous benign client-rounds",
+    "fltrust_metric": "low_trust_suppression_rate",
+    "fltrust_threshold_relative_to_uniform": 0.25,
+    "fltrust_threshold_scope": "reporting convention only; not an FLTrust defense threshold",
+    "measured_seed_aggregation": "mean and sample standard deviation across three paired seeds",
+    "reference_table_status": "illustrative_reference; not measured and not seed-level observations"
+  }
+}
