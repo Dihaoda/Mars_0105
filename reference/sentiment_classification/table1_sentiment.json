@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "title": "Performance on the Sentiment Classification Task under Different Attack and Defense Settings",
+  "task": "binary_sentiment_classification",
+  "standard_domain": "Amazon Polarity",
+  "heterogeneous_domain": "IMDb",
+  "status": "reference_table_pending_measurement",
+  "measured": false,
+  "unit": "percent",
+  "columns": [
+    "attack",
+    "method",
+    "misclassification_rate_pct",
+    "standard_test_accuracy_pct",
+    "heterogeneous_test_accuracy_pct"
+  ],
+  "note": "LaTeX source and rendered artifacts for the study design table. These values are retained as reference targets until supported by completed run records."
+}

@@ -1,0 +1,53 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\renewcommand{\arraystretch}{1.22}
+\setlength{\tabcolsep}{5.5pt}
+
+\begin{document}
+\begin{minipage}{16.9cm}
+\centering
+{\small\textbf{TABLE I}}\\[2pt]
+{\normalsize\textsc{Performance on the Sentiment Classification Task under Different Attack and Defense Settings}}\\[7pt]
+
+\begin{tabular}{C{2.35cm} C{2.85cm} C{2.85cm} C{3.15cm} C{3.7cm}}
+\toprule
+\textbf{Attack Setting} &
+\textbf{Aggregation / Defense} &
+\textbf{Misclassification Rate (\%)} &
+\textbf{Standard Test Accuracy (\%)} &
+\textbf{Heterogeneous Test Accuracy (\%)} \\
+\midrule
+
+& FedAvg     & 0.0  & 94.1 & 86.3 \\
+& IndexGuard & 14.7 & 93.8 & 83.9 \\
+& FLAME      & 22.4 & 93.9 & 81.8 \\
+\multirow{-4}{*}{No Attack}
+& FLTrust    & 27.2 & 93.6 & 80.7 \\
+\midrule
+
+& FedAvg     & 0.0  & 87.0 & 79.6 \\
+& IndexGuard & 26.9 & 91.5 & 81.0 \\
+& FLAME      & 35.8 & 92.0 & 78.7 \\
+\multirow{-4}{*}{Label Flipping}
+& FLTrust    & 40.3 & 91.7 & 77.4 \\
+\midrule
+
+& FedAvg     & 0.0  & 93.5 & 84.9 \\
+& IndexGuard & 29.6 & 93.0 & 79.8 \\
+& FLAME      & 41.7 & 92.8 & 76.8 \\
+\multirow{-4}{*}{Text Backdoor}
+& FLTrust    & 37.9 & 92.9 & 78.3 \\
+\bottomrule
+\end{tabular}
+
+\vspace{5pt}
+{\footnotesize Standard domain: Amazon Polarity; heterogeneous domain: IMDb.}
+\end{minipage}
+\end{document}
+

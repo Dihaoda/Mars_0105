@@ -1,0 +1,13 @@
+attack,method,misclassification_rate_pct,standard_test_accuracy_pct,heterogeneous_test_accuracy_pct
+none,FedAvg,0.0,94.1,86.3
+none,IndexGuard,14.7,93.8,83.9
+none,FLAME,22.4,93.9,81.8
+none,FLTrust,27.2,93.6,80.7
+label_flipping,FedAvg,0.0,87.0,79.6
+label_flipping,IndexGuard,26.9,91.5,81.0
+label_flipping,FLAME,35.8,92.0,78.7
+label_flipping,FLTrust,40.3,91.7,77.4
+text_backdoor,FedAvg,0.0,93.5,84.9
+text_backdoor,IndexGuard,29.6,93.0,79.8
+text_backdoor,FLAME,41.7,92.8,76.8
+text_backdoor,FLTrust,37.9,92.9,78.3
